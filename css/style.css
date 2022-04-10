@@ -150,6 +150,40 @@ main{
     margin: 1px 0px;
 }
 
+.Cont_img_anim:hover .image {
+    opacity: 0.3;
+}
+
+.Cont_img_anim:hover .middle {
+    opacity: 1;
+}
+
+.Cont_img_anim{
+    opacity: 1;
+    transition: .5s ease;
+    position: relative;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text {
+    background-color: rgb(167, 204, 221);
+    color: black;
+    font-size: 1.5rem;
+    padding: 16px 32px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
 /* --------- Main Secciones General --------- */
 
 .Subtitulo__secciones{
@@ -353,6 +387,13 @@ footer a{
         border: 1px solid rgb(196, 194, 194);
     }
 
+    .Producto__image:hover{
+        -webkit-transform: scale(1.01) rotate(0.01deg);
+        transform: scale(1.01) rotate(0.01deg);
+        transition-duration: 0.5s;
+        border: 1px solid black;
+    }
+
     .img__medium{
         width: 90%;
         height: 350px;
@@ -379,6 +420,9 @@ footer a{
         width: 30%;
     }
 
+    .text{
+        font-size: 1.5rem;
+    }
 
 }
 
@@ -482,6 +526,10 @@ footer a{
     input, textarea{
         width: 100%;
     }
+
+    .text{
+        font-size: 2rem;
+    }
     
     footer{
         grid-template-areas:
@@ -503,5 +551,4 @@ footer a{
     #footer_contacto{
         border: none;
     }
-
 }
