@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/Logo/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <title>Leo's Bakery</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Comienzo del header-->
+
+        <header>
+            <a href="./index.html">
+                <img id="logo" src="./assets/img/Logo/logo.png" alt="logo de la empresa">
+                <h1>Leo's Bakery</h1>
+            </a>
+        </header>
+
+        <!-- Barra de navegación y redes sociales-->
+
+        <nav id="NavBar">
+            <ul id="NavBar_Menu">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="./html/productos.html">PRODUCTOS</a>
+                    <!-- Menu desplegable de productos -->
+                    <ul class="NavBar_Menu_dropdown">
+                        <li><a href="./html/tortas.html">TORTAS</a></li>
+                        <li><a href="./html/desayunos.html">DESAYUNOS</a></li>
+                        <li><a href="./html/minicakes.html">MINI CAKES</a></li>
+                        <li><a href="./html/macarons.html">MACARONS</a></li>
+                    </ul>
+                </li>
+                <li><a href="./html/local.html">LOCAL</a></li>
+                <li><a href="./html/eventos.html">EVENTOS</a></li>
+                <li><a href="./html/contacto.html">CONTACTO</a></li>
+            </ul>
+
+            <!-- Redes sociales -->
+            <div id="NavBar_Redes">
+                <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/iconos/facebook.png"
+                        alt="logo de facebook" class="redes_iconoGrande"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/iconos/instagram.png"
+                        alt="logo de instagram" class="redes_iconoGrande"></a>
+            </div>
+        </nav>
+
+        <!-- Comienzo del cuerpo principal-->
+
+        <main id="main_index">
+            <section id="Grid_SecIndex">
+                <!-- Futuro carousel en bootsrap-->
+                <article id="Carousel">
+                    <img src="./assets/img/Index/Carousel1.jpg" alt="Foto de presentación" class="img_grande">
+                </article>
+
+                <!-- Recordatorio de redes sociales -->
+                <article class="Index_TextoRedes">
+                    <h2 class="Index_TextoRedes_subt">Seguinos también en <a href="https://www.facebook.com/"
+                            target="_blank">Facebook</a> / <a href="https://www.instagram.com/"
+                            target="_blank">Instagram</a> </h2>
+                </article>
+
+                <!-- Foto de las secciones más solicitadas-->
+                <article id="IndexArt_Macarons">
+                    <a href="./html/macarons.html"><img src="./assets/img/Index/macarons.jpeg" alt="foto de macarons"
+                            class="img_grande "></a>
+                </article>
+
+                <article id="IndexArt_MiniCakes">
+                    <a href="./html/minicakes.html"><img src="./assets/img/Index/minicakes.jpg"
+                            alt="foto de mini tortas" class="img_grande"></a>
+                </article>
+
+                <!-- Foto del local con enlace a esa sección -->
+                <article class="IndexArt_Local">
+                    <a href="./html/local.html"><img src="./assets/img/Index/Local.jpg" alt="Foto del local"
+                            class="img_grande "></a>
+                </article>
+
+            </section>
+
+        </main>
+
+        <!-- Comienzo del footer-->
+
+        <footer>
+            <!-- Navegación del sitio -->
+            <div id="footer_nav">
+                <p class="footer_titulo">Navegacion:</p>
+                <p><a href="index.html">Inicio</a></p>
+                <p><a href="./html/productos.html">Productos</a></p>
+                <p><a href="./html/local.html">Local</a></p>
+                <p><a href="./html/eventos.html">Eventos</a></p>
+                <p><a href="./html/contacto.html">Contacto</a></p>
+            </div>
+
+            <!-- Información de contacto -->
+            <div id="footer_contacto">
+                <p class="footer_titulo">Contactanos:</p>
+                <p>Calle Falsa 123</p>
+                <p>5555-5555</p>
+                <p><a href="mailto:leosbakery@gmail.com" target="_blank">leosbakery@gmail.com</a></p>
+            </div>
+
+            <!-- Link a redes sociales -->
+            <div id="footer_redes">
+                <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/iconos/fb_blanco.png"
+                        alt="logo de facebook" class="redes_iconoGrande"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/iconos/ig_blanco.png"
+                        alt="logo de instagram" class="redes_iconoGrande"></a>
+            </div>
+
+            <!-- Copyright -->
+            <div id="footer_copyright">
+                <p>Todos Los Derechos Reservados &copy; 2022 Leo's Bakery</p>
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
