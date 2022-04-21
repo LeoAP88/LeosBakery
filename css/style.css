@@ -1,5 +1,5 @@
 /* --------- Reset --------- */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,50 +8,51 @@
 
 /* --------- General --------- */
 
-html{
+html {
     font-size: 62.5%;
 }
 
-#wrapper{
+#wrapper {
     min-height: 100vh;
     background-color: white;
     display: grid;
     grid-template-areas:
-    "nav"
-    "main"
-    "footer";
+        "nav"
+        "main"
+        "footer";
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-.img_grande{
+.img_grande {
     width: 100%;
     height: 300px;
+    border-radius: 2px;
 }
 
-.bordeGris{
+.bordeGris {
     border-left: 2px solid rgb(202, 201, 201);
 }
 
-.texto--centrado{
+.texto--centrado {
     text-align: center;
     font-size: 1.5rem;
     margin-top: 5px;
 }
 
-.redes_iconoGrande{
+.redes_iconoGrande {
     width: 2.2rem;
     height: 2.2rem;
 }
 
-.redes_iconoChico{
+.redes_iconoChico {
     width: 1.5rem;
     height: 1.5rem;
     margin-right: 5px;
@@ -59,25 +60,25 @@ li{
 
 /* --------- Header --------- */
 
-header{
+header {
     margin-top: 15px;
     text-align: center;
     grid-area: header;
 }
 
-#logo{
+#logo {
     width: 12rem;
     height: 12rem;
 }
 
-h1{
+h1 {
     font-size: 2rem;
     color: black;
 }
 
 /* --------- Nav --------- */
 
-#NavBar{
+#NavBar {
     grid-area: nav;
     font-size: 1.5rem;
     /*display: flex;
@@ -110,57 +111,76 @@ h1{
 }
 */
 
-#NavBar a:hover{
-    color:rgb(177, 174, 174);
+#NavBar a:hover {
+    color: rgb(177, 174, 174);
 }
 
-.navbar-brand{
+.navbar-brand {
     font-size: 2rem;
+}
+
+.dropdown-item:active {
+    background-color: rgb(44, 44, 44);
+}
+
+.dropdown-menu {
+    font-size: 1.5rem;
 }
 
 /* --------- Main Index --------- */
 
-main{
+main {
     border-top: 1px solid black;
     margin-top: 3px;
     grid-area: main;
 }
 
-#Grid_SecIndex{
+#Grid_SecIndex {
     display: grid;
     grid-template-areas:
-    "Carousel"
-    "Redes"
-    "Macarons" 
-    "MiniCakes"
-    "Local";
+        "Carousel"
+        "Redes"
+        "Macarons"
+        "MiniCakes"
+        "Local";
     grid-template-columns: 1fr;
     height: 100%;
 }
 
-#Carousel{
-    padding-top:10px;
+#Carousel {
+    padding-top: 10px;
     grid-area: Carousel;
 }
 
-.Index_TextoRedes{
+.Index_TextoRedes {
     grid-area: Redes;
-    width: 100%;
     background-color: rgb(167, 204, 221);
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-#IndexArt_Macarons{
+.Index_TextoRedes_subt {
+    margin: 0;
+}
+
+#IndexArt_Macarons {
     grid-area: Macarons;
 }
 
-#IndexArt_MiniCakes{
+#IndexArt_MiniCakes {
     grid-area: MiniCakes;
 }
 
-.IndexArt_Local{
+.IndexArt_Local {
     grid-area: Local;
-    margin: 1px 0px;
+}
+
+.carousel,
+.Index_TextoRedes,
+#IndexArt_Macarons,
+#IndexArt_MiniCakes,
+.IndexArt_Local {
+    margin-bottom: 5px;
 }
 
 .Cont_img_anim:hover .image {
@@ -171,7 +191,7 @@ main{
     opacity: 1;
 }
 
-.Cont_img_anim{
+.Cont_img_anim {
     opacity: 1;
     transition: .5s ease;
     position: relative;
@@ -199,7 +219,7 @@ main{
 
 /* --------- Main Secciones General --------- */
 
-.Subtitulo__secciones{
+.Subtitulo__secciones {
     font-size: 1.8rem;
     margin-top: 10px;
     padding: 10px 0px;
@@ -210,13 +230,13 @@ main{
     letter-spacing: 5px;
 }
 
-.Seccion__otros{
+.Seccion__otros {
     margin-top: 10px;
 }
 
 /* --------- Main Productos --------- */
 
-.Seccion__prod{
+.Seccion__prod {
     margin-top: 10px;
     font-size: 1.5rem;
     display: flex;
@@ -224,46 +244,46 @@ main{
     justify-content: space-evenly;
 }
 
-.Producto{
+.Producto {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.Producto__image{
+.Producto__image {
     width: 100%;
     border: 1px solid rgb(196, 194, 194);
 }
 
 /* --------- Main Local --------- */
 
-.Local_Art_Contacto{
+.Local_Art_Contacto {
     text-align: center;
 }
 
-.Local_DatosContacto{
+.Local_DatosContacto {
     line-height: 50px;
     font-size: 1.2rem;
     font-weight: bold;
-}   
+}
 
-.iframe__ubicacion{
+.iframe__ubicacion {
     display: none;
 }
 
 /* --------- Main Contacto --------- */
 
-.Contacto_Section{
+.Contacto_Section {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
 }
 
-.Contacto_Container{
+.Contacto_Container {
     line-height: 35px;
     text-align: center;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -271,16 +291,17 @@ form{
     margin-top: 10px;
 }
 
-textarea{
+textarea {
     resize: none;
 }
 
-input, textarea{
+input,
+textarea {
     border-radius: 3px;
     width: 50%;
 }
 
-.btn{
+.btn {
     margin: 5px 0px;
     padding: 5px 10px;
     width: 15%;
@@ -289,36 +310,39 @@ input, textarea{
 
 /* --------- Footer --------- */
 
-footer{
+footer {
     display: grid;
     grid-template-areas:
-    "fNav"
-    "fContacto"
-    "fRedes"  
-    "fCopyright";
+        "fNav"
+        "fContacto"
+        "fRedes"
+        "fCopyright";
     background-color: rgb(49, 46, 46);
-    color:white;
+    color: white;
     padding-top: 10px;
     justify-content: center;
     font-size: 1.3rem;
     bottom: 0;
 }
 
-footer a{
-    color:white;
+footer a {
+    color: white;
 }
 
-#footer_nav, #footer_contacto, #footer_redes{
+#footer_nav,
+#footer_contacto,
+#footer_redes {
     justify-self: center;
 }
-#footer_nav{
+
+#footer_nav {
     grid-area: fNav;
     line-height: 25px;
     text-align: center;
     padding-bottom: 10px;
 }
 
-#footer_contacto{
+#footer_contacto {
     grid-area: fContacto;
     line-height: 25px;
     text-align: center;
@@ -327,14 +351,14 @@ footer a{
     padding: 10px 0;
 }
 
-#footer_redes{
+#footer_redes {
     grid-area: fRedes;
     margin-top: 10px;
     display: flex;
     gap: 20px;
 }
 
-#footer_copyright{
+#footer_copyright {
     grid-area: fCopyright;
     margin-top: 25px;
 }
@@ -342,77 +366,82 @@ footer a{
 
 /* --------- Media queries --------- */
 
-@media(min-width:650px){
+@media(min-width:650px) {
 
-    #wrapper{
-        min-height: auto;
+    #wrapper {
+        min-height: 100vh;
     }
 
-    .navbar-brand{
+    .navbar-brand {
         margin-left: 50px;
     }
 
-    #Grid_SecIndex{
+    #Grid_SecIndex {
         grid-template-areas:
-        "Carousel Carousel"
-        "Redes Redes"
-        "Macarons MiniCakes"
-        "Local Local";
+            "Carousel Carousel"
+            "Redes Redes"
+            "Macarons MiniCakes"
+            "Local Local";
         grid-template-columns: 1fr 1fr;
     }
 
-    #IndexArt_MiniCakes img{
-        border-left: 1px solid rgb(170, 170, 170);
+    #IndexArt_Macarons {
+        padding-right: 3px;
     }
 
-    .Producto{
+    #IndexArt_MiniCakes {
+        padding-left: 3px;
+    }
+
+    .Producto {
         width: 48%;
         text-align: center;
     }
 
-    .Producto__image{
+    .Producto__image {
         border-radius: 10px;
         border: 1px solid rgb(196, 194, 194);
     }
 
-    .Producto__image:hover{
+    .Producto__image:hover {
         -webkit-transform: scale(1.01) rotate(0.01deg);
         transform: scale(1.01) rotate(0.01deg);
         transition-duration: 0.5s;
         border: 1px solid black;
     }
 
-    .img__medium{
+    .img__medium {
         width: 90%;
         height: 350px;
         border: 1px solid rgb(196, 194, 194);
     }
 
-    .Seccion__otros{
+    .Seccion__otros {
         text-align: center;
     }
 
-    .Contacto_Section{
+    .Contacto_Section {
         flex-direction: row;
         justify-content: space-evenly;
     }
 
-    input, textarea{
+    input,
+    textarea {
         border-radius: 3px;
         width: 80%;
     }
-    
-    .btn{
+
+    .btn {
         margin: 5px 0px;
         padding: 5px 10px;
         width: 30%;
     }
 
-    .text{
+    .text {
         font-size: 1.5rem;
     }
-
 }
+
 /*
 @media(min-width:768px){
     #NavBar_Menu{
@@ -448,42 +477,42 @@ footer a{
 */
 
 
-@media(min-width:900px){
-    body{
+@media(min-width:900px) {
+    body {
         background-image: url('../assets/img/Fondo.jpg');
         background-repeat: repeat;
     }
 
-    #wrapper{
+    #wrapper {
         max-width: 1024px;
         margin: auto;
         background-color: white;
         display: grid;
         grid-template-areas:
-        "nav"
-        "main"
-        "footer";
+            "nav"
+            "main"
+            "footer";
     }
 
-    #logo{
+    #logo {
         width: 15rem;
         height: 15rem;
     }
 
-    h1{
+    h1 {
         font-size: 3rem;
     }
 
-    .redes_iconoGrande{
+    .redes_iconoGrande {
         width: 2.2rem;
         height: 2.2rem;
     }
 
-    .navbar-brand{
+    .navbar-brand {
         margin-left: 100px;
     }
 
-/*
+    /*
     #NavBar{
         flex-direction: row;
         font-size: 1.8rem;
@@ -503,83 +532,85 @@ footer a{
         margin-bottom: 10px;
     }
 */
-    .Subtitulo__secciones{
+    .Subtitulo__secciones {
         font-size: 2rem;
     }
 
-    .img_grande{
+    .img_grande {
         height: 100%;
     }
 
-    .Index_TextoRedes{
+    .Index_TextoRedes {
         display: grid;
         align-content: center;
         text-transform: uppercase;
         padding: 20px 0;
     }
 
-    .Index_TextoRedes_subt{
+    .Index_TextoRedes_subt {
         font-size: 2rem;
     }
 
-    .Producto{
+    .Producto {
         width: 32%;
         text-align: center;
     }
 
-    .iframe__ubicacion{
+    .iframe__ubicacion {
         display: flex;
         height: 300px;
         width: 50%;
         border: 1px solid rgb(196, 194, 194);
     }
-    
-    .Local_Art_Contacto{
+
+    .Local_Art_Contacto {
         display: flex;
         justify-content: space-around;
     }
 
-    .Seccion__otros{
+    .Seccion__otros {
         margin-bottom: 10px;
     }
 
-    .img__medium{
+    .img__medium {
         width: 100%;
         margin-bottom: 10px;
         border: none;
     }
 
-    .Contacto_Section{
+    .Contacto_Section {
         margin-top: 10px;
         font-size: 1.5rem;
     }
 
-    input, textarea{
+    input,
+    textarea {
         width: 100%;
     }
 
-    .text{
+    .text {
         font-size: 2rem;
     }
-    
-    footer{
+
+    footer {
         grid-template-areas:
-        "fNav fContacto fRedes"
-        "fCopyright fCopyright fCopyright";
+            "fNav fContacto fRedes"
+            "fCopyright fCopyright fCopyright";
         grid-template-columns: 1fr 1fr 1fr;
         align-content: center;
         justify-content: center;
         font-size: 1.5rem;
-        
+
     }
 
-    #footer_copyright{
+    #footer_copyright {
         grid-area: fCopyright;
         justify-self: center;
         margin-top: 25px;
     }
 
-    #footer_contacto{
+    #footer_contacto {
         border: none;
     }
+
 }
