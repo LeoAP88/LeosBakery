@@ -203,7 +203,8 @@ main {
 }
 
 .Producto__image {
-  width: 100%;
+  width: 80%;
+  border-radius: 5px;
   border: 1px solid #c4c2c2;
 }
 
